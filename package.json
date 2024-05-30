@@ -1,0 +1,36 @@
+{
+  "name": "callback-receiver",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy --minify",
+    "deploy-production": "wrangler deploy --env --minify production",
+    "dev": "wrangler dev",
+    "lint": "./node_modules/.bin/eslint 'src/**/*.js'",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reviart/callback-receiver.git"
+  },
+  "author": "Revi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reviart/callback-receiver/issues"
+  },
+  "homepage": "https://github.com/reviart/callback-receiver#readme",
+  "dependencies": {
+    "hono": "^4.3.11"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^8.0.3",
+    "wrangler": "^3.0.0"
+  }
+}
